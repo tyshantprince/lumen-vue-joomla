@@ -21,6 +21,6 @@
 |
 */
 
-$router->get('/', function () {
-    return view('greeting', ['name' => 'Joomla!']);
+$router->get('{any}', function () {
+    return view('app');
 });
